@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Sign UP</title>
+  </head>
+  <body>
+    <div
+      class="container font-sans   sm:mx-auto sm:p-2 sm:flex sm:justify-evenly sm:items-center 2xl:mt-52 "
+    >
+      <div class="left hidden sm:flex 2xl:p-2 2xl:flex 2xl:items-center 2xl:justify-around">
+        <div class="imageContainer sm:hidden 2xl:block">
+          <img src="/assets/student.png" alt="student" class="" />
+        </div>
+        <div class="textContainer 2xl:m-2">
+          <span class="  sm:text-2xl text-[5rem] font-extrabold text-blue-400"
+            >Uni-Connect</span
+          >
+          <br />
+          <span class="2xl:text-lg 2xl:p-2 2xl:m-1 font-semibold"
+            >Bridging the Gap Between the University and the Student</span
+          >
+        </div>
+      </div>
+      <div class="right  sm:w-10/12 md:w-1/2 2xl:w-1/5 2xl:m-2 2xl:flex shadow-lg shadow-indigo-500/50">
+        <div class="formContainer  p-2 2xl:p-3 flex flex-col ">
+          <h1 class="signUp font-semibold text-lg flex justify-around 2xl:hidden">Welcome to the Uni-Connect</h1>
+          <div class="form">
+            <form action="/users/sign-up" class="flex flex-col gap-2">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                placeholder="Enter your Name"
+                class="border-2 rounded p-2 bg-inherit border-[#009579]"
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                class="border-2 rounded p-2 bg-inherit border-[#009579]"
+                required
+              />
+
+              <label for="password" class="font-sans">Password</label>
+              <input
+                type="password"
+                placeholder="Enter your Password"
+                class="border-2 border-[#009579] rounded p-2 bg-inherit"
+                required
+              />
+
+              <button
+                type="submit"
+                class="rounded bg-[#009579] text-white p-2 font-semibold text-[1.2rem]"
+              >
+                Sign Up
+              </button>
+            </form>
+            <span class="flex justify-around text-lg font-semibold">or</span>
+          </div>
+
+          <div class="social cursor-pointer">
+            <div
+              class="googleSignup p-1 rounded text-[1.2rem] bg-[#009579] text-white flex items-center justify-between"
+            >
+              <span class="text-[1.2rem] font-semibold"
+                >Sign up With google</span
+              >
+              <img src="/assets/google.avif" alt="google" class="w-8 m-2" />
+            </div>
+          </div>
+
+          <div class="login p-3">
+            <span class="">Already have an Account?</span>
+            <a href="#" class="text-blue-700 underline">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
